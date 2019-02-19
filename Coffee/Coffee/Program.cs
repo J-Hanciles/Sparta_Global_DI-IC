@@ -48,8 +48,8 @@ namespace Coffee
     {
         //Brewed
     }
-    interface IBrewCoffee
+    public interface IBrewCoffee
     {
-        //Make Coffee
+        void BrewCoffee();
     }
 }
