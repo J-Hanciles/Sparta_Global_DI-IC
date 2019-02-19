@@ -13,21 +13,32 @@ namespace Coffee
 
         }
     }
-    class BasicCoffeeMachine : IBrewCoffee, IBlend, IDecaf, IMilk
+    class Coffee : IBrewCoffee, IInstant, IBlend, IDecaf, IMilk
     {
 
     }
-    class PremiumCoffeeMachine
+    class BasicCoffeeMachine : Coffee
+    {
+
+    }
+    class PremiumCoffeeMachine : Coffee
     {
 
     }
     interface IBeans
     {
         //Light Roast, Medium Roast, Dark Roast
+        //string Lightroastbeans;
+        //string Mediumroastbeans;
+        //string Darkroastbeans;
+    }
+    interface IInstant
+    {
+        //Instant
     }
     interface IDecaf
     {
-        //Full Strength
+        //Full Strength or Decaf
     }
     interface IMilk
     {
@@ -35,7 +46,7 @@ namespace Coffee
     }
     interface IBlend
     {
-        //Instant of Brewed
+        //Brewed
     }
     interface IBrewCoffee
     {
